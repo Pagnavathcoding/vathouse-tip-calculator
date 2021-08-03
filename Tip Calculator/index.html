@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo.PNG" />
+    <title>VATHOUSE | Tip Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="title">
+            <h1>Tip Calculator</h1>
+        </div>
+        <div class="contents">
+            <div class="err" id="err-container">
+                <p id="err">Error</p>
+            </div>
+            <div class="tip">
+                <h1>How much was your bill?</h1>
+                <div class="bill-dollar">
+                    <p>$</p>
+                    <input type="number" id="bill" placeholder="Bill Amount">
+                </div>
+                <h1>How was your service?</h1>
+                <div class="range-service">
+                    <input type="range" value="0" id="range" min="0" max="100">
+                    <p id="total-range">0%</p>
+                </div>
+                <h1>How many people are sharing the bill?</h1>
+                <div class="people">
+                    <input type="number" id="people" placeholder="People">
+                    <p>people.</p>
+                </div>
+                <div class="btn">
+                    <button id="submit">Submit</button>
+                    <button id="reset">Reset</button>
+                </div>
+                <div class="amount" id="total">
+                    <h3>Tip Amount</h3>
+                    <h1 id="tip-amount"></h1>
+                    <p>each</p>
+                    <img src="./images/chevron-down.svg" height="30px" />
+                    <h3>Total Tip</h3>
+                    <h1 id="total-tip"></h1>
+                    <img src="./images/chevron-down.svg" height="30px" />
+                    <h3>Total Amount</h3>
+                    <h1 id="total-amount"></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
